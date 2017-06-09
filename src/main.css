@@ -1,0 +1,38 @@
+html {
+    height: 100%; width: 100%;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%; width: 100%;
+}
+
+h1 {
+    background: #1976D2;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    font-size: large;
+    font-weight: normal;
+}
+
+#speed-statistics > div {
+    display: inline-block;
+    padding: 5px 20px 5px 0;
+}
+#speed-statistics > div > span {
+    font-weight: bold;
+}
+
+#chart-container {
+    flex: 1;
+    overflow: hidden;
+}
+
+.padding {
+    padding: 5px 10px;
+}

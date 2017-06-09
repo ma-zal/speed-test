@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+        <script type="text/javascript" src="speedtest-main.js"></script>
+        <script type="text/javascript" src="speedtest-graph.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+<body>
+    <h1>Network downstream speed test</h1>
+    
+    <section class="padding">
+        Test size: <input id="testSizeMB" type="number" value="10" style="width:4em" min="1" />MiB
+        <button id="startButton" onclick="onStartButtonClick()">Start speed test</button>
+        <button id="cancelButton" onclick="cancel()" disabled>Cancel</button>
+        &nbsp; &nbsp; &nbsp; <span>Status: <span id="status">Idle</span></span>
+    </section>    
+
+    <section class="padding">
+        <div id="speed-statistics">
+            <div>Current: <span id="currentSpeed">--</span></div>
+            <div>Average: <span id="averageSpeed">--</span></div>
+        </div>
+    </section>
+    <div id="chart-container">
+        <canvas id="myChart"></canvas>
+    </div>
+
+</body>
+</html>
